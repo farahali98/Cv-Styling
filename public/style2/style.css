@@ -1,0 +1,301 @@
+body {
+    padding: 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    float: right;
+    top: 0px;
+}
+
+div.experience-details {
+    padding-bottom: 30p;
+    padding-top: 22px;
+}
+
+header hgroup {
+    float: left;
+}
+
+figure {
+    transform: rotate(-20deg);
+    float: right;
+}
+
+header hgroup h2 {
+    display: none;
+}
+
+#about h3 {
+    display: none;
+    border-right: none;
+}
+
+#about p {
+    border-top: gray solid 1px;
+    margin-top: -7%;
+    color: gray;
+    font-style: italic;
+    line-height: 30px;
+}
+
+body {
+    padding: 10%;
+}
+
+body div .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.experience-institution {
+    display: none;
+}
+
+.content h3 {
+    border-right: 1px solid gray;
+    font-style: italic;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.experience-description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.experience-type,
+.experience-description {
+    padding-left: 1%;
+}
+
+.experience-details {
+    padding-left: 60%;
+}
+
+.skill {
+    background-color: teal;
+    width: 25%;
+    float: left;
+    margin: 10px;
+    height: 48px;
+    color: white;
+}
+
+.experience-type {
+    color: teal;
+}
+
+.skills-primary {
+    padding: 1.5%;
+    font-size: 1.5em;
+}
+
+.skills-secondary {
+    padding: 1.2%;
+    font-size: 0.75em;
+}
+
+.experience-date-separator {
+    color: teal
+}
+
+.experience-date,
+.experience-location,
+h4 {
+    color: gray;
+}
+
+#competencies {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-auto-rows: 1fr 1fr;
+}
+
+#hobbies {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.skill[data-skill="1"] span::after {
+    content: "★";
+}
+
+.skill[data-skill="1"] span::after {
+    content: "★";
+}
+
+.skill[data-skill="2"] span::after {
+    content: "★★";
+}
+
+.skill[data-skill="3"] span::after {
+    content: "★★";
+}
+
+.skill[data-skill="4"] span::after {
+    content: "★★★";
+}
+
+.skill[data-skill="5"] span::after {
+    content: "★★★";
+}
+
+.skill[data-skill="6"] span::after {
+    content: "★★★★";
+}
+
+.skill[data-skill="7"] span::after {
+    content: "★★★★";
+}
+
+.skill[data-skill="8"] span::after {
+    content: "★★★★★";
+}
+
+.skill[data-skill="9"] span::after {
+    content: "★★★★★";
+}
+
+.skill[data-skill="10"]span::after {
+    content: "★★★★★";
+}
+
+section#experiences {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#education {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+[data-skill="3"] span {
+    width: 30%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+[data-skill="1"] span ::after {
+    content: "★";
+    color: white;
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contact {
+    margin: 0;
+    width: 130px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 50%;
+    float: left;
+    display: block;
+    margin: 3px;
+}
+
+.contact:hover {
+    background-color: teal;
+}
+
+.contact-type,
+.contact-value {
+    display: block;
+    float: left;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-type {
+    display: none;
+}
+
+.contact-value a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.contact-skype {
+    display: none;
+}
+
+.contact-phone {
+    background-image: url("../images/phone.png");
+}
+
+.contact-email {
+    background-image: url("../images/email.png");
+}
+
+.contact-github {
+    background-image: url("../images/github.png");
+}
+
+.contact-facebook {
+    background-image: url("../images/facebook.png");
+}
+
+.contact {
+    margin-left: 10%;
+    padding: -10px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    figure {
+        display: none;
+    }
+    #competencies {
+        display: flex;
+        flex-direction: column;
+    }
+    section#experiences {
+        display: block;
+    }
+    section#education {
+        display: block;
+    }
+    div.experience-details {
+        padding-left: 10px;
+    }
+    .content h3 {
+        border-right: none;
+        border-bottom: solid gray 2px;
+    }
+    div .contacts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skill {
+        background-color: teal;
+        width: 25%;
+        float: left;
+        height: 30px;
+    }
+}
