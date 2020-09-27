@@ -1,0 +1,224 @@
+header div {
+    display: grid;
+    grid-template-columns: 15% 15%;
+    background-color: gray;
+    padding-left: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding-left: 2.5%;
+    padding-right: 0.5%;
+    padding-top: -5px;
+}
+
+#education,
+#experiences {
+    padding-top: -5px;
+}
+
+#contact {
+    border: none;
+    display: block;
+    grid-template-columns: 25% 75%;
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    width: 50%;
+    height: 50px;
+}
+
+#contact h3 {
+    border-bottom: none;
+}
+
+.experience-date-separator,
+.experience-date,
+h4 {
+    color: red;
+}
+
+span.experience-type::after {
+    content: ' @ ';
+    color: crimson;
+}
+
+span.experience-institution {
+    color: crimson;
+}
+
+.experience-location::before {
+    content: 'In';
+}
+
+.experience-date::before {
+    content: "on";
+    color: gray;
+}
+
+.day,
+.month,
+.year,
+.experience-location {
+    color: grey;
+}
+
+.experience-institute {
+    font-weight: lighter;
+}
+
+.experience-type {
+    font-weight: bold;
+}
+
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+.contact dt {
+    background-color: red;
+}
+
+.contact dd {
+    background-color: black;
+}
+
+hgroup {
+    color: red;
+}
+
+div .content h3 {
+    border-bottom: solid #E8E8E8 1px;
+}
+
+h3:not(#last):before {
+    content: ' \25CF';
+    color: red;
+    font-size: 200%;
+}
+
+#hobbies {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.contact h3 {
+    color: gray;
+}
+
+#contact {
+    color: gray;
+}
+
+.skill {
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 40%;
+    margin: 1%;
+    padding: 0.5%;
+    color: white;
+}
+
+.skills-primary {
+    padding: 1.5%;
+}
+
+.skills-secondary {
+    padding: 1.5%;
+}
+
+[data-skill="5"] span {
+    width: 50%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+[data-skill="3"] span {
+    width: 30%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+[data-skill="1"] span {
+    width: 15%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+.skills-secondary .skill span {
+    background-color: crimson;
+}
+
+.skills-primary .skill span {
+    background-color: red;
+}
+
+[data-skill="7"] span {
+    width: 75%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+[data-skill="9"] span {
+    width: 85%;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin: 5px;
+}
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+}
+
+@media screen and (max-width: 700px) {
+    body div header {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-left: none;
+    }
+    header div {
+        display: block;
+        background-color: gray;
+        padding-left: 100px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact dd {
+        background: none;
+    }
+    #contact {
+        border: none;
+        display: block;
+        position: static;
+        bottom: -10px;
+        width: 100%;
+        height: 50px;
+        padding-left: -10%;
+    }
+}
